@@ -17,6 +17,7 @@ function httpAddNewLaunch(req, res) {
             error: "Missing required Launch Property",
         });
     }
+    
     launch.launchDate = new Date(launch.launchDate);
     if (isNaN(launch.launchDate)) {
         return res.status(400).json({
