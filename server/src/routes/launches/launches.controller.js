@@ -3,7 +3,6 @@ const {
     scheduleNewLaunch,
     existsLaunchWithId,
     abortLaunchById,
-    scheduleNewLaunch,
 } = require('../../models/launches.model');
 
 async function httpGetAllLaunches(req, res) {
